@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=DVN8NWppCN0 -->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous">
+
+        <style>
+            #elemento{
+                height: 100px;
+                width: 100px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        <div class="container" id="contenido">
+            <h1 class="display-4" id="idDelh1">Boludote</h1>
+            <h1 id="color-azul">Segundo H1</h1>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>-->
+
+        <div class="container my-5" id="contenido">
+            <button class="btn btn-primary">Agregar</button>
+            <button class="btn btn-danger">Quitar</button>
+            <button class="btn btn-warning">Toggle</button>
+
+            <div class="bg-dark text-white mt-5" id="resultado">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi illum nemo qui 
+                    corrupti vel distinctio consequuntur id esse laborum voluptatum quia praesentium 
+                    deleniti nobis, totam nam dolores magni vitae?
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="container my-5">
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" autocomplete="off">
+            <div class="bg-dark text-white mt-5 p-2" id="contenido2">
+                Estoy esperando...
+            </div>
+        </div> -->
+        <div class="container my-5" id="contenido">
+            <form id="formulario">
+                <input type="text" placeholder="Ingresa tu nombre" class="form-control" name="nombre" id='nombre'>
+                <button class="btn btn-info mt-3" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="container my-5" id="contenido">
+            <button class="btn btn-primary" id="mostrar">Mostrar</button>
+            <button class="btn btn-danger" id="ocultar">Ocultar</button>
+            <button class="btn btn-warning" id="toggle">Toggle</button>
+            <button class="btn btn-secondary" id="animate">Animate</button>
+            <div class="mt-5 bg-danger text-white py-5 text-center text-uppercase" id="elemento">
+                <!-- <p>Este es un elemento dinámico</p> -->
+            </div>
+        </div>
+
+        <!--Con esto ya tengo jQuery en mi proyecto web-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
